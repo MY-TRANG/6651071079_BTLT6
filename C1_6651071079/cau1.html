@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8" />
+    <title>JS DOM paragraph style</title>
+    <!-- Liên kết file CSS -->
+    <link rel="stylesheet" href="Styles/cau1.css">
+</head>
+
+<body>
+
+    <!-- Bảng tùy chỉnh giao diện để người dùng chọn -->
+    <div class="control-panel">
+        <div class="control-group">
+            <label for="fontSizeSelect">Cỡ chữ (fontSize):</label>
+            <select id="fontSizeSelect">
+                <option value="18px">18px</option>
+                <option value="24px">24px</option>
+                <option value="30px">30px</option>
+                <option value="36px">36px</option>
+            </select>
+        </div>
+
+        <div class="control-group">
+            <label for="fontFamilySelect">Phông chữ (fontFamily):</label>
+            <select id="fontFamilySelect">
+                <option value="Arial, sans-serif">Arial</option>
+                <option value="'Times New Roman', serif">Times New Roman</option>
+                <option value="'Courier New', monospace">Courier New</option>
+                <option value="Verdana, sans-serif">Verdana</option>
+            </select>
+        </div>
+
+        <div class="control-group">
+            <label for="colorPicker">Màu chữ (color):</label>
+            <input type="color" id="colorPicker" value="#ff0000">
+        </div>
+    </div>
+
+    <!-- Đoạn văn bản theo đề bài -->
+    <p id="text">JavaScript Exercises - w3resource</p>
+
+    <div>
+        <!-- Đã bỏ onclick trong HTML để gán sự kiện bằng jQuery hoàn toàn -->
+        <button id="jsstyle">Style</button>
+    </div>
+
+    <!-- Nhúng thư viện jQuery đã tải về trước -->
+    <script src="Scripts/jquery-4.0.0.min.js"></script>
+    <!-- Hoặc dùng CDN nếu không chép file: <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+
+    <!-- File script tự viết sử dụng jQuery -->
+    <script src="Scripts/cau1.js"></script>
+</body>
+
+</html>
